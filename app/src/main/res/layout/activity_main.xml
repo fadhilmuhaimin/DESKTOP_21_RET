@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:text="Please login to continue"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Email"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/email_et"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/password_et"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <Button
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="end"
+            android:id="@+id/login_btn"
+            android:text="Login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>
